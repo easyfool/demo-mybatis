@@ -3,12 +3,12 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.wangfengbabe.demo.mybatis.mapper.CountryMapper">
-  <resultMap id="BaseResultMap" type="Country">
+  <resultMap id="BaseResultMap" type="com.wangfengbabe.demo.mybatis.model.Country">
     <id property="id" column="id"/>
     <result property="countryName" column="country_name"/>
     <result property="countryCode" column="country_code"/>
-
   </resultMap>
+
   <select id="selectAll" resultMap="BaseResultMap">
     select  * from  country
    </select>
